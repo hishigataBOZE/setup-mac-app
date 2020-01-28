@@ -18,11 +18,11 @@ Homebrew/homebrew-core (git revision 72b9; last commit 2020-01-28)
 $ brew install ansible
 $ ansible --version
 ansible 2.9.3
-:
+:
 ```
 
 ## 実行
 
 ```bash
-$ ansible-playbook ./playbooks/my-mac.yml
+$ ansible-playbook playbook.yml
 ```
