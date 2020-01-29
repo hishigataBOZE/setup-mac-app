@@ -8,7 +8,7 @@
   vars:
     brew_taps:
       - homebrew/core
-      - caskroom/cask
+      - homebrew/cask
     brew_packages:
       # treeコマンド
       - tree
@@ -29,12 +29,18 @@
       - google-chrome
       # Google 日本語入力
       - google-japanese-ime
+      # Googleのバックアップと動機
+      - google-backup-and-sync
       # iTerm2 ターミナル
       - iterm2
       # LICEcap 
       - licecap
       # Docker
       - docker
+      # Vagrant
+      - vagrant
+      # VirtualBox
+      - virtualbox
       # Visual Studio Code
       - visual-studio-code
       # Source Tree
@@ -61,6 +67,11 @@
         install_options: "appdir=/Applications"
         accept_external_apps: yes
       with_items: "{{ brew_cask_apps }}"
+
+    - name: Update Homebrew Cask Packages
+      homebrew_cask:
+        update_homebrew: yes
+        upgrade_all: yes
 
     # https://docs.ansible.com/ansible/2.9/modules/homebrew_module.html
     - name: Update Homebrew
