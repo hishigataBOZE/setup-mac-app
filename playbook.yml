@@ -18,8 +18,6 @@
       - git
       # Git LFS
       - git-lfs
-      # Docker Compose
-      - docker-compose
       # AWS CLI
       - awscli
       # Hugo
@@ -33,14 +31,8 @@
       - google-backup-and-sync
       # iTerm2 ターミナル
       - iterm2
-      # LICEcap 
-      - licecap
-      # Docker
+      # Docker for Mac
       - docker
-      # Vagrant
-      - vagrant
-      # VirtualBox
-      - virtualbox
       # Visual Studio Code
       - visual-studio-code
       # Source Tree
